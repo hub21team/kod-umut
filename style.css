@@ -1,0 +1,184 @@
+* {
+  font-family: "Poppins";
+  font-weight: 400;
+  color: var(--light);
+}
+
+:root {
+  --primary: #7b57fc;
+  --secondary: #b4e500;
+  --tetriary: #ff7d00;
+  --dark: #3a3d4b;
+  --light: white;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("pictures/hope-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.upperBar {
+  height: 20%;
+  width: 60%;
+  min-width: 500px;
+  padding: 20px;
+  background-color: var(--primary);
+  border-radius: 10px 10px 0 0;
+}
+
+.main {
+  height: 70%;
+  width: 60%;
+  min-width: 500px;
+  padding: 20px;
+  background-color: var(--primary);
+}
+
+.footer {
+  height: 10%;
+  width: 60%;
+  min-width: 500px;
+  padding: 20px;
+  background-color: var(--primary);
+  border-radius: 0 0 10px 10px;
+}
+
+.codeHope {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.codeHope p {
+  margin: 0;
+  font-family: "Caveat";
+  font-weight: 300;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: "Caveat";
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.middle {
+  height: 70%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 30px;
+}
+
+.middleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+
+.button-mimas {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  background: var(--tetriary);
+}
+
+.button-mimas::before,
+.button-mimas::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.button-mimas span {
+  position: relative;
+}
+
+.button-mimas::before {
+  background: var(--secondary);
+  width: 130%;
+  left: -15%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button-mimas:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hub21-logo {
+  width: 150px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.bilkom-logo {
+  width: 110px;
+  height: 55px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.footer-info p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.pdf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-button {
+  cursor: pointer;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
