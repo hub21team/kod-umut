@@ -25,6 +25,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 
 .home {
@@ -192,21 +195,8 @@ h2 {
   border-radius: 5px;
 }
 
-@media (min-width: 481px) {
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 @media (max-width: 480px) {
   .middle {
     flex-direction: column;
-  }
-  body {
-    display: flex;
-    align-items: start;
-    justify-content: center;
   }
 }
