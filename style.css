@@ -195,8 +195,18 @@ h2 {
   border-radius: 5px;
 }
 
-@media (max-width: 480px) {
+iframe {
+  width: 800px;
+  height: 750px;
+}
+
+@media (max-width: 540px) {
   .middle {
     flex-direction: column;
+  }
+
+  iframe {
+    width: 350px;
+    height: 450px;
   }
 }
